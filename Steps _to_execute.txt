@@ -1,0 +1,54 @@
+// add thunder client extension (crtl+shift+x) & search it and install
+
+run url on browser : http://localhost:3000/students
+
+1. Create Project Folder//Do directly on desktop..
+mkdir college-admission-api
+cd college-admission-api
+
+2. Initialize Node Project //no need to run if directly copied
+npm init -y
+
+3. Install Required Packages
+npm install express mongoose nodemon
+
+4. Create Files
+Create these files:
+college-admission-api
+│
+├── server.js
+├── package.json
+└── models
+    └── Student.js
+
+============================================================
+Check api nodes under thunder-client (logo=lightening inside circle)
+============================================================
+
+POST API Testing
+URL
+http://localhost:3000/students
+Method
+POST
+ Body  => JSON
+{    "name": "Shashank",    "email": "shashank@gmail.com",    "course": "Computer Engineering",    "percentage": 97,    "city": "Pune"}
+-------------------------------------------------------------
+GET API
+http://localhost:3000/students
+-------------------------------------------------------------
+
+PUT API
+Copy _id from GET response.
+Example:
+http://localhost:3000/students/681c123abc456789
+Body  => JSON
+{    "name": "Rahul",    "email": "rahul@gmail.com",    "course": "IT",    "percentage": 95,    "city": "Mumbai"}
+
+///ALWAYS PUT YOUR _id....
+-------------------------------------------------------------
+
+DELETE API
+http://localhost:3000/students/681c123abc456789
+
+
+-------------------------------------------------------------
