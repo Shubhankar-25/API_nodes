@@ -1,6 +1,8 @@
 // add thunder client extension (crtl+shift+x) & search it and install
 
-run url on browser : http://localhost:3000/students
+run url on browser : http://localhost:3000/students 
+output Initially:
+[]
 
 1. Create Project Folder//Do directly on desktop..
 mkdir college-admission-api
@@ -20,7 +22,31 @@ college-admission-api
 ├── package.json
 └── models
     └── Student.js
+============================================================
+how to run??
+  node server.js
 
+Expected Output
+MongoDB Connected
+Server running on port 3000
+
+Test GET API
+
+Open browser:
+http://localhost:3000/students
+-------------------------------------
+Start MongoDB Service Manually
+
+Open PowerShell as Administrator and run:
+net start MongoDB
+
+If successful:
+The MongoDB service was started successfully.
+
+Then run:
+node server.js
+
+***ignore if it shows MongoDB Connected
 ============================================================
 Check api nodes under thunder-client (logo=lightening inside circle)
 ============================================================
